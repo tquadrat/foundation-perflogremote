@@ -11,3 +11,5 @@ The Remote Client for Foundation Performance Logging and Monitoring Extension
       <version>0.25.0</version>
     </dependency>
     ```
+---  
+Last updated: 2026-05-03T17:30:46.585693929+02:00[Europe/Berlin]
