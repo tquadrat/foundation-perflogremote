@@ -6,8 +6,8 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      version='1.1'
      baseProfile='full'
-     width='696.000'
-     height='682.000'>
+     width='1056.000'
+     height='1141.000'>
     <defs>
         <style><![CDATA[
             line
@@ -118,8 +118,8 @@
         </marker>
         <clipPath id='ID000001'>
             <rect class='focusClass'
-                  height='62.000'
-                  width='352.000'
+                  height='183.000'
+                  width='1000.000'
                   x='0.000'
                   y='0.000'/>
         </clipPath>
@@ -129,28 +129,50 @@
                    clip-path='url(#ID000001)'>
                     <rect x='0.000'
                           y='0.000'
-                          width='352.000'
-                          height='62.000'
+                          width='1000.000'
+                          height='183.000'
                           class='focusClass'/>
                     <line x1='0.000'
                           y1='17.000'
-                          x2='352.000'
+                          x2='1000.000'
                           y2='17.000'
                           class='separator'/>
-                    <text x='125.000'
+                    <text x='449.000'
                           y='13.000'>PerfLogRemoteImpl</text>
                     <line x1='0.000'
-                          y1='34.000'
-                          x2='352.000'
-                          y2='34.000'
+                          y1='89.000'
+                          x2='1000.000'
+                          y2='89.000'
                           class='separator'/>
                     <text y='30.000'
+                          class='final'>- m_Cleanable:java.lang.ref.Cleaner.Cleanable</text>
+                    <text y='41.000'
+                          class='final'>- m_Connection:javax.management.MBeanServerConnection</text>
+                    <text y='52.000'>- m_IsActive:boolean</text>
+                    <text y='63.000'
+                          class='final'>- m_Janitor:org.tquadrat.foundation.perflog.remote.internal.PerfLogRemoteImpl.Janitor</text>
+                    <text y='74.000'
+                          class='static final'>- m_Cleaner:java.lang.ref.Cleaner</text>
+                    <text y='85.000'
                           class='static final'>- m_ObjectName:javax.management.ObjectName</text>
                     <text x='5.000'
-                          y='47.000'>+ PerfLogRemoteImpl()</text>
+                          y='102.000'>+ PerfLogRemoteImpl(url:javax.management.remote.JMXServiceURL,listener:javax.management.NotificationListener)</text>
                     <text x='5.000'
-                          y='58.000'
+                          y='113.000'>- checkActive():boolean</text>
+                    <text x='5.000'
+                          y='124.000'>+ close():void</text>
+                    <text x='5.000'
+                          y='135.000'
+                          class='static'>+ connect(url:javax.management.remote.JMXServiceURL,listener:javax.management.NotificationListener):org.tquadrat.foundation.perflog.remote.internal.PerfLogRemoteImpl</text>
+                    <text x='5.000'
+                          y='146.000'>+ getMBeanInfo():javax.management.MBeanInfo</text>
+                    <text x='5.000'
+                          y='157.000'
                           class='static'>+ getPerfLogMBeanObjectName():javax.management.ObjectName</text>
+                    <text x='5.000'
+                          y='168.000'>+ getPerformanceSection(name:java.lang.String):java.lang.String</text>
+                    <text x='5.000'
+                          y='179.000'>+ getPerformanceSections():java.lang.String[]</text>
                 </g>
             </g>
         </symbol>
@@ -212,8 +234,8 @@
         </symbol>
         <clipPath id='ID000003'>
             <rect class='otherClass'
-                  height='370.000'
-                  width='352.000'
+                  height='436.000'
+                  width='1006.000'
                   x='0.000'
                   y='0.000'/>
         </clipPath>
@@ -222,23 +244,23 @@
                 <g clip-path='url(#ID000003)'>
                     <rect x='0.000'
                           y='0.000'
-                          width='352.000'
-                          height='370.000'
+                          width='1006.000'
+                          height='436.000'
                           class='otherClass'/>
                     <line x1='0.000'
                           y1='28.000'
-                          x2='352.000'
+                          x2='1006.000'
                           y2='28.000'
                           class='separator'/>
-                    <text x='149.600'
+                    <text x='476.600'
                           y='13.000'
                           class='stereotype'>&#xAB;Interface&#xBB;</text>
-                    <text x='137.000'
+                    <text x='464.000'
                           y='24.000'
                           class='abstract'>PerfLogRemote</text>
                     <line x1='0.000'
                           y1='353.000'
-                          x2='352.000'
+                          x2='1006.000'
                           y2='353.000'
                           class='separator'/>
                     <text y='41.000'
@@ -301,24 +323,87 @@
                           class='static final'>+ NOTIFICATION_Type:java.lang.String</text>
                     <text x='5.000'
                           y='366.000'
+                          class='abstract'>+ close():void</text>
+                    <text x='5.000'
+                          y='377.000'
+                          class='abstract static'>+ connect(registryPort:int,listener:javax.management.NotificationListener):org.tquadrat.foundation.perflog.remote.PerfLogRemote</text>
+                    <text x='5.000'
+                          y='388.000'
+                          class='abstract static'>+ connect(hostName:java.lang.String,registryPort:int,dataPort:int,listener:javax.management.NotificationListener):org.tquadrat.foundation.perflog.remote.PerfLogRemote</text>
+                    <text x='5.000'
+                          y='399.000'
+                          class='abstract'>+ getMBeanInfo():javax.management.MBeanInfo</text>
+                    <text x='5.000'
+                          y='410.000'
                           class='abstract static'>+ getPerfLogMBeanObjectName():javax.management.ObjectName</text>
+                    <text x='5.000'
+                          y='421.000'
+                          class='abstract'>+ getPerformanceSection(name:java.lang.String):java.lang.String</text>
+                    <text x='5.000'
+                          y='432.000'
+                          class='abstract'>+ getPerformanceSections():java.lang.String[]</text>
+                </g>
+            </g>
+        </symbol>
+        <clipPath id='ID000004'>
+            <rect class='externalClass'
+                  height='62.000'
+                  width='94.000'
+                  x='0.000'
+                  y='0.000'/>
+        </clipPath>
+        <symbol id='java.lang.AutoCloseable'>
+            <g>
+                <g clip-path='url(#ID000004)'>
+                    <rect x='0.000'
+                          y='0.000'
+                          width='94.000'
+                          height='62.000'
+                          class='externalClass'/>
+                    <line x1='0.000'
+                          y1='28.000'
+                          x2='94.000'
+                          y2='28.000'
+                          class='separator'/>
+                    <text x='20.600'
+                          y='13.000'
+                          class='stereotype'>&#xAB;Interface&#xBB;</text>
+                    <text x='8.000'
+                          y='24.000'
+                          class='abstract'>AutoCloseable</text>
+                    <line x1='0.000'
+                          y1='45.000'
+                          x2='94.000'
+                          y2='45.000'
+                          class='separator'/>
+                    <text x='5.000'
+                          y='41.000'/>
+                    <text x='5.000'
+                          y='58.000'
+                          class='abstract'>+ close():void</text>
                 </g>
             </g>
         </symbol>
     </defs>
     <path class='inheritance'
-          d='M323.000,495.000 c0.000,-283.000,-176.000,0.000,-176.000,-283.000 v-15'
+          d='M553.000,833.000 c0.000,-621.000,-289.000,0.000,-289.000,-621.000 v-15'
           marker-end='url(#inheritance)'/>
     <path class='implementation'
-          d='M373.000,495.000 c0.000,-85.000,122.000,0.000,122.000,-85.000 v-15'
+          d='M503.000,833.000 c0.000,-85.000,25.000,0.000,25.000,-85.000 v-15'
           marker-end='url(#implementation)'/>
-    <use x='25.000'
+    <path class='inheritance'
+          d='M528.000,297.000 c0.000,-195.000,264.000,0.000,264.000,-195.000 v-15'
+          marker-end='url(#inheritance)'/>
+    <use x='142.000'
          y='25.000'
          xlink:href='#java.lang.Object'/>
-    <use x='319.000'
+    <use x='745.000'
          y='25.000'
+         xlink:href='#java.lang.AutoCloseable'/>
+    <use x='25.000'
+         y='297.000'
          xlink:href='#org.tquadrat.foundation.perflog.remote.PerfLogRemote'/>
-    <use x='172.000'
-         y='495.000'
+    <use x='28.000'
+         y='833.000'
          xlink:href='#org.tquadrat.foundation.perflog.remote.internal.PerfLogRemoteImpl'/>
 </svg>

@@ -24,6 +24,7 @@ module org.tquadrat.foundation.perflog.remote
 {
     requires org.apiguardian.api;
     requires org.tquadrat.foundation.util;
+    requires org.tquadrat.foundation.mgmt;
     requires java.management;
 
     //---* For common use *----------------------------------------------------

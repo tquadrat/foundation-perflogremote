@@ -19,7 +19,7 @@ loadScripts(document, 'script');</script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
 </noscript>
-<header role="banner"><div style="overflow:auto;"><img src="../../../../../../../resources/tquadrat_logo.jpg" alt="tquadrat.org"style="float:right;"><div style="font-family:sans-serif;font-size:40px;font-weight:bold;padding-left:30px;"><p>tquadrat's <i>Foundation</i> Library<br>org.tquadrat.foundation.perflog.remote 0.25.0 API</p></div>      <p>Build: 2026-05-03T19:49:40.749112666Z[UTC]</p>      </div>
+<header role="banner"><div style="overflow:auto;"><img src="../../../../../../../resources/tquadrat_logo.jpg" alt="tquadrat.org"style="float:right;"><div style="font-family:sans-serif;font-size:40px;font-weight:bold;padding-left:30px;"><p>tquadrat's <i>Foundation</i> Library<br>org.tquadrat.foundation.perflog.remote 0.25.0 API</p></div>      <p>Build: 2026-05-04T19:20:01.258865539Z[UTC]</p>      </div>
 <nav role="navigation">
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="top-nav" id="navbar-top">
@@ -59,14 +59,52 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Package</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="#org.tquadrat.foundation.perflog.remote.internal">org.tquadrat.foundation.perflog.remote.internal</a></div>
+<div class="col-first even-row-color"><a href="#org.tquadrat.foundation.perflog.remote">org.tquadrat.foundation.perflog.remote</a></div>
 <div class="col-last even-row-color">
+<div class="block">The classes for a remote client to the Foundation Performance
+Logging and Monitoring.</div>
+</div>
+<div class="col-first odd-row-color"><a href="#org.tquadrat.foundation.perflog.remote.internal">org.tquadrat.foundation.perflog.remote.internal</a></div>
+<div class="col-last odd-row-color">
 <div class="block">The implementation for the Foundation Performance Logging and
 Monitoring Remote Client.</div>
 </div>
 </div>
 <section class="class-uses">
 <ul class="block-list">
+<li>
+<section class="detail" id="org.tquadrat.foundation.perflog.remote">
+<h2>Uses of <a href="../PerfLogRemote.html" title="interface in org.tquadrat.foundation.perflog.remote">PerfLogRemote</a> in <a href="../package-summary.html">org.tquadrat.foundation.perflog.remote</a></h2>
+<div class="caption"><span>Methods in <a href="../package-summary.html">org.tquadrat.foundation.perflog.remote</a> that return <a href="../PerfLogRemote.html" title="interface in org.tquadrat.foundation.perflog.remote">PerfLogRemote</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static <a href="../PerfLogRemote.html" title="interface in org.tquadrat.foundation.perflog.remote">PerfLogRemote</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">PerfLogRemote.</span><code><a href="../PerfLogRemote.html#connect(int,javax.management.NotificationListener)" class="member-name-link">connect</a><wbr>(int&nbsp;registryPort,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/NotificationListener.html" title="class or interface in javax.management" class="external-link">NotificationListener</a>&nbsp;listener)</code></div>
+<div class="col-last even-row-color">
+<div class="block">Connects to the Performance Logging MBean specified
+through the given port number and the
+<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/ObjectName.html" title="class or interface in javax.management" class="external-link"><code>ObjectName</code></a>
+returned by
+<a href="../PerfLogRemote.html#getPerfLogMBeanObjectName()"><code>PerfLogRemote.getPerfLogMBeanObjectName()</code></a>.</div>
+</div>
+<div class="col-first odd-row-color"><code>static <a href="../PerfLogRemote.html" title="interface in org.tquadrat.foundation.perflog.remote">PerfLogRemote</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">PerfLogRemote.</span><code><a href="../PerfLogRemote.html#connect(java.lang.String,int,int,javax.management.NotificationListener)" class="member-name-link">connect</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;hostName,
+ int&nbsp;registryPort,
+ int&nbsp;dataPort,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/NotificationListener.html" title="class or interface in javax.management" class="external-link">NotificationListener</a>&nbsp;listener)</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Connects to the Performance Logging MBean specified
+through the given host name, port numbers and the
+<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/ObjectName.html" title="class or interface in javax.management" class="external-link"><code>ObjectName</code></a>
+returned by
+<a href="../PerfLogRemote.html#getPerfLogMBeanObjectName()"><code>PerfLogRemote.getPerfLogMBeanObjectName()</code></a>.</div>
+</div>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="org.tquadrat.foundation.perflog.remote.internal">
 <h2>Uses of <a href="../PerfLogRemote.html" title="interface in org.tquadrat.foundation.perflog.remote">PerfLogRemote</a> in <a href="../internal/package-summary.html">org.tquadrat.foundation.perflog.remote.internal</a></h2>
