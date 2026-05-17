@@ -30,7 +30,6 @@ import javax.management.NotificationListener;
 import javax.management.ObjectName;
 import javax.management.ReflectionException;
 import javax.management.remote.JMXServiceURL;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 
@@ -43,12 +42,12 @@ import org.tquadrat.foundation.perflog.remote.internal.PerfLogRemoteImpl;
  *  Performance Logging and Monitoring.}</p>
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: PerfLogRemote.java 1229 2026-05-04 19:11:41Z tquadrat $
+ *  @version $Id: PerfLogRemote.java 1248 2026-05-17 11:08:34Z tquadrat $
  *  @since 0.25.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: PerfLogRemote.java 1229 2026-05-04 19:11:41Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: PerfLogRemote.java 1248 2026-05-17 11:08:34Z tquadrat $" )
 @API( status = STABLE, since = "0.25.0" )
 public sealed interface PerfLogRemote extends AutoCloseable
     permits PerfLogRemoteImpl
@@ -69,7 +68,7 @@ public sealed interface PerfLogRemote extends AutoCloseable
      *  {@value}.
      */
     @SuppressWarnings( "StaticMethodOnlyUsedInOneClass" )
-    public static final String JSONField_Aborted = "Aborted";
+    public static final String JSONField_Aborted = "IsAborted";
 
     /**
      *  The name of the JSON Number that holds the number of aborted runs for
@@ -185,7 +184,7 @@ public sealed interface PerfLogRemote extends AutoCloseable
      *  The name of the JSON boolean that holds the flag indicating whether a
      *  report should be sent only when the threshold was exceeded: {@value}.
      */
-    @SuppressWarnings( "StaticMethodOnlyUsedInOneClass" )
+    @SuppressWarnings( {"StaticMethodOnlyUsedInOneClass", "FieldNamingConvention"} )
     public static final String JSONField_SectionThresholdOnlyReport = "ThresholdOnlyReport";
 
     /**
@@ -219,7 +218,7 @@ public sealed interface PerfLogRemote extends AutoCloseable
      *  The name of the JSON boolean that holds timed out flag: {@value}.
      */
     @SuppressWarnings( "StaticMethodOnlyUsedInOneClass" )
-    public static final String JSONField_TimedOut = "TimedOut";
+    public static final String JSONField_TimedOut = "IsTimedOut";
 
     /**
      *  The name of the JSON Number that holds the number of performance
@@ -235,7 +234,7 @@ public sealed interface PerfLogRemote extends AutoCloseable
      *  @see #JSONField_SectionThreshold
      *  @see #JSONField_SectionTimeout
      */
-    @SuppressWarnings( "StaticMethodOnlyUsedInOneClass" )
+    @SuppressWarnings( {"StaticMethodOnlyUsedInOneClass", "unused"} )
     public static final String JSONField_Unit = "Unit";
 
     /**
@@ -245,6 +244,7 @@ public sealed interface PerfLogRemote extends AutoCloseable
      *  @see #JSONField_SectionThreshold
      *  @see #JSONField_SectionTimeout
      */
+    @SuppressWarnings( "unused" )
     public static final String JSONField_Value = "Value";
 
     /**

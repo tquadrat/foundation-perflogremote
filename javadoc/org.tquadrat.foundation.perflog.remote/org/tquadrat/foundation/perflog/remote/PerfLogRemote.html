@@ -55,7 +55,7 @@ loadScripts(document, 'script');</script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
 </noscript>
-<header role="banner"><div style="overflow:auto;"><img src="../../../../../../resources/tquadrat_logo.jpg" alt="tquadrat.org"style="float:right;"><div style="font-family:sans-serif;font-size:40px;font-weight:bold;padding-left:30px;"><p>tquadrat's <i>Foundation</i> Library<br>org.tquadrat.foundation.perflog.remote 0.25.1 API</p></div>      <p>Build: 2026-05-09T08:29:12.965112883Z[UTC]</p>      </div>
+<header role="banner"><div style="overflow:auto;"><img src="../../../../../../resources/tquadrat_logo.jpg" alt="tquadrat.org"style="float:right;"><div style="font-family:sans-serif;font-size:40px;font-weight:bold;padding-left:30px;"><p>tquadrat's <i>Foundation</i> Library<br>org.tquadrat.foundation.perflog.remote 0.25.1 API</p></div>      <p>Build: 2026-05-17T11:08:43.877767995Z[UTC]</p>      </div>
 <nav role="navigation">
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="top-nav" id="navbar-top">
@@ -155,10 +155,10 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="horizontal-scroll">
-<div class="type-signature"><span class="annotations"><a href="https://tquadrat.github.io/foundation-base/javadoc/org.tquadrat.foundation.base/org/tquadrat/foundation/annotation/ClassVersion.html" title="class or interface in org.tquadrat.foundation.annotation" class="external-link">@ClassVersion</a>(<a href="https://tquadrat.github.io/foundation-base/javadoc/org.tquadrat.foundation.base/org/tquadrat/foundation/annotation/ClassVersion.html#sourceVersion()" title="class or interface in org.tquadrat.foundation.annotation" class="external-link">sourceVersion</a>="$Id: PerfLogRemote.java 1229 2026-05-04 19:11:41Z tquadrat $")
+<div class="type-signature"><span class="annotations"><a href="https://tquadrat.github.io/foundation-base/javadoc/org.tquadrat.foundation.base/org/tquadrat/foundation/annotation/ClassVersion.html" title="class or interface in org.tquadrat.foundation.annotation" class="external-link">@ClassVersion</a>(<a href="https://tquadrat.github.io/foundation-base/javadoc/org.tquadrat.foundation.base/org/tquadrat/foundation/annotation/ClassVersion.html#sourceVersion()" title="class or interface in org.tquadrat.foundation.annotation" class="external-link">sourceVersion</a>="$Id: PerfLogRemote.java 1248 2026-05-17 11:08:34Z tquadrat $")
 <a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.html" title="class or interface in org.apiguardian.api" class="external-link">@API</a>(<a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.html#status()" title="class or interface in org.apiguardian.api" class="external-link">status</a>=<a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.Status.html#STABLE" title="class or interface in org.apiguardian.api" class="external-link">STABLE</a>,
      <a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.html#since()" title="class or interface in org.apiguardian.api" class="external-link">since</a>="0.25.0")
-</span><span class="modifiers">public sealed interface </span><span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-51">PerfLogRemote</a></span><span class="extends-implements">
+</span><span class="modifiers">public sealed interface </span><span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-50">PerfLogRemote</a></span><span class="extends-implements">
 extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/AutoCloseable.html" title="class or interface in java.lang" class="external-link">AutoCloseable</a></span>
 <span class="permits">permits <a href="internal/PerfLogRemoteImpl.html" title="class in org.tquadrat.foundation.perflog.remote.internal">PerfLogRemoteImpl</a></span></div>
 <div class="block"><p>The declaration of a remote client for the Foundation
@@ -167,7 +167,7 @@ Performance Logging and Monitoring.</p></div>
 <dt><span class="simpleTagLabel">Author:</span></dt>
   <dd>Thomas Thrien (<a href="mailto:thomas.thrien@tquadrat.org">thomas.thrien@tquadrat.org</a>)</dd>
 <dt>Version:</dt>
-<dd>$Id: PerfLogRemote.java 1229 2026-05-04 19:11:41Z tquadrat $</dd>
+<dd>$Id: PerfLogRemote.java 1248 2026-05-17 11:08:34Z tquadrat $</dd>
 <dt>Since:</dt>
 <dd>0.25.0</dd>
 
@@ -214,7 +214,7 @@ in the MBean server: "org.tquadrat.foundation.PerfLog"</div>
 <div class="col-second odd-row-color"><code><a href="#JSONField_Aborted" class="member-name-link">JSONField_Aborted</a></code></div>
 <div class="col-last odd-row-color">
 <div class="block">The name of the JSON boolean that holds the aborted flag:
-"Aborted".</div>
+"IsAborted".</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color"><code><a href="#JSONField_AbortedRuns" class="member-name-link">JSONField_AbortedRuns</a></code></div>
@@ -342,7 +342,7 @@ section runs where the threshold was exceeded: "ThresholdExceeded".</div>
 <div class="col-first odd-row-color"><code>static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#JSONField_TimedOut" class="member-name-link">JSONField_TimedOut</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The name of the JSON boolean that holds timed out flag: "TimedOut".</div>
+<div class="block">The name of the JSON boolean that holds timed out flag: "IsTimedOut".</div>
 </div>
 <div class="col-first even-row-color"><code>static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color"><code><a href="#JSONField_TimedOutRuns" class="member-name-link">JSONField_TimedOutRuns</a></code></div>
@@ -459,7 +459,7 @@ sections.</div>
 <section class="detail" id="DOMAIN_NAME">
 <h3>DOMAIN_NAME</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-65">DOMAIN_NAME</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-64">DOMAIN_NAME</a></span></div>
 <div class="block"><p>The domain name part of the
 <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.management/javax/management/ObjectName.html" title="class or interface in javax.management" class="external-link"><code>ObjectName</code></a>
 identifying the Performance Logging MBean
@@ -479,9 +479,9 @@ in the MBean server: "org.tquadrat.foundation.PerfLog".</p></div>
 <section class="detail" id="JSONField_Aborted">
 <h3>JSONField_Aborted</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-71">JSONField_Aborted</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-70">JSONField_Aborted</a></span></div>
 <div class="block">The name of the JSON boolean that holds the aborted flag:
-"Aborted".</div>
+"IsAborted".</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -497,7 +497,7 @@ in the MBean server: "org.tquadrat.foundation.PerfLog".</p></div>
 <section class="detail" id="JSONField_AbortedRuns">
 <h3>JSONField_AbortedRuns</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-78">JSONField_AbortedRuns</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-77">JSONField_AbortedRuns</a></span></div>
 <div class="block">The name of the JSON Number that holds the number of aborted runs for
 the performance section: "Aborted".</div>
 <dl class="notes">
@@ -515,7 +515,7 @@ the performance section: "Aborted".</div>
 <section class="detail" id="JSONField_Cause">
 <h3>JSONField_Cause</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-85">JSONField_Cause</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-84">JSONField_Cause</a></span></div>
 <div class="block">The name of the JSON String that holds the cause for the abort of a
 performance section: "Cause".</div>
 <dl class="notes">
@@ -533,7 +533,7 @@ performance section: "Cause".</div>
 <section class="detail" id="JSONField_CompletedRuns">
 <h3>JSONField_CompletedRuns</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-92">JSONField_CompletedRuns</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-91">JSONField_CompletedRuns</a></span></div>
 <div class="block">The name of the JSON Number that holds the number of completed runs for
 the performance section: "Completed".</div>
 <dl class="notes">
@@ -551,7 +551,7 @@ the performance section: "Completed".</div>
 <section class="detail" id="JSONField_Context">
 <h3>JSONField_Context</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-99">JSONField_Context</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-98">JSONField_Context</a></span></div>
 <div class="block">The name of the JSON Object that holds the performance section context:
 "Context".</div>
 <dl class="notes">
@@ -569,7 +569,7 @@ the performance section: "Completed".</div>
 <section class="detail" id="JSONField_ElapsedTime">
 <h3>JSONField_ElapsedTime</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-105">JSONField_ElapsedTime</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-104">JSONField_ElapsedTime</a></span></div>
 <div class="block">The name of the JSON Object that holds the elapsed time: "ElapsedTime".</div>
 <dl class="notes">
 <dt>See Also:</dt>
@@ -586,7 +586,7 @@ the performance section: "Completed".</div>
 <section class="detail" id="JSONField_Error">
 <h3>JSONField_Error</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-111">JSONField_Error</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-110">JSONField_Error</a></span></div>
 <div class="block">The name of the JSON Object that holds an error message: "Error".</div>
 <dl class="notes">
 <dt>See Also:</dt>
@@ -603,7 +603,7 @@ the performance section: "Completed".</div>
 <section class="detail" id="JSONField_ExceededThreshold">
 <h3>JSONField_ExceededThreshold</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-118">JSONField_ExceededThreshold</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-117">JSONField_ExceededThreshold</a></span></div>
 <div class="block">The name of the JSON boolean that holds threshold exceeded flag:
 "ExceededThreshold".</div>
 <dl class="notes">
@@ -621,7 +621,7 @@ the performance section: "Completed".</div>
 <section class="detail" id="JSONField_FirstStart">
 <h3>JSONField_FirstStart</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-125">JSONField_FirstStart</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-124">JSONField_FirstStart</a></span></div>
 <div class="block">The name of the JSON String that holds the time of the first start of
 the performance section: "FirstStart".</div>
 <dl class="notes">
@@ -639,7 +639,7 @@ the performance section: "FirstStart".</div>
 <section class="detail" id="JSONField_LastUpdated">
 <h3>JSONField_LastUpdated</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-132">JSONField_LastUpdated</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-131">JSONField_LastUpdated</a></span></div>
 <div class="block">The name of the JSON String that holds the time when the performance
 section was last updated: "LastUpdated".</div>
 <dl class="notes">
@@ -657,7 +657,7 @@ section was last updated: "LastUpdated".</div>
 <section class="detail" id="JSONField_Message">
 <h3>JSONField_Message</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-139">JSONField_Message</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-138">JSONField_Message</a></span></div>
 <div class="block">The name of the JSON String that holds the text of an error message:
 "Message".</div>
 <dl class="notes">
@@ -675,7 +675,7 @@ section was last updated: "LastUpdated".</div>
 <section class="detail" id="JSONField_Section">
 <h3>JSONField_Section</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-146">JSONField_Section</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-145">JSONField_Section</a></span></div>
 <div class="block">The name of the JSON Object that holds the data from the performance
 section: "PerformanceSection".</div>
 <dl class="notes">
@@ -693,7 +693,7 @@ section: "PerformanceSection".</div>
 <section class="detail" id="JSONField_SectionDescription">
 <h3>JSONField_SectionDescription</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-153">JSONField_SectionDescription</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-152">JSONField_SectionDescription</a></span></div>
 <div class="block">The name of the JSON String that holds the description of the
 performance section: "Description".</div>
 <dl class="notes">
@@ -711,7 +711,7 @@ performance section: "Description".</div>
 <section class="detail" id="JSONField_SectionIgnored">
 <h3>JSONField_SectionIgnored</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-160">JSONField_SectionIgnored</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-159">JSONField_SectionIgnored</a></span></div>
 <div class="block">The name of the JSON Boolean that holds the flag indicating whether the
 performance section is currently ignored: "Ignored".</div>
 <dl class="notes">
@@ -729,7 +729,7 @@ performance section is currently ignored: "Ignored".</div>
 <section class="detail" id="JSONField_SectionName">
 <h3>JSONField_SectionName</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-167">JSONField_SectionName</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-166">JSONField_SectionName</a></span></div>
 <div class="block">The name of the JSON String that holds the name of the performance
 section: "Name".</div>
 <dl class="notes">
@@ -747,7 +747,7 @@ section: "Name".</div>
 <section class="detail" id="JSONField_SectionStatistics">
 <h3>JSONField_SectionStatistics</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-174">JSONField_SectionStatistics</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-173">JSONField_SectionStatistics</a></span></div>
 <div class="block">The name of the JSON Object that holds the execution statistics of the
 performance section: "Statistics".</div>
 <dl class="notes">
@@ -765,7 +765,7 @@ performance section: "Statistics".</div>
 <section class="detail" id="JSONField_SectionThreshold">
 <h3>JSONField_SectionThreshold</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-181">JSONField_SectionThreshold</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-180">JSONField_SectionThreshold</a></span></div>
 <div class="block">The name of the JSON Object that holds the threshold time from the
 performance section: "Threshold".</div>
 <dl class="notes">
@@ -783,7 +783,7 @@ performance section: "Threshold".</div>
 <section class="detail" id="JSONField_SectionThresholdOnlyReport">
 <h3>JSONField_SectionThresholdOnlyReport</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-188">JSONField_SectionThresholdOnlyReport</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-187">JSONField_SectionThresholdOnlyReport</a></span></div>
 <div class="block">The name of the JSON boolean that holds the flag indicating whether a
 report should be sent only when the threshold was exceeded: "ThresholdOnlyReport".</div>
 <dl class="notes">
@@ -801,7 +801,7 @@ report should be sent only when the threshold was exceeded: "ThresholdOnlyReport
 <section class="detail" id="JSONField_SectionTimeout">
 <h3>JSONField_SectionTimeout</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-195">JSONField_SectionTimeout</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-194">JSONField_SectionTimeout</a></span></div>
 <div class="block">The name of the JSON Object that holds the timeout time from the
 performance section: "Timeout".</div>
 <dl class="notes">
@@ -819,7 +819,7 @@ performance section: "Timeout".</div>
 <section class="detail" id="JSONField_StartTime">
 <h3>JSONField_StartTime</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-202">JSONField_StartTime</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-201">JSONField_StartTime</a></span></div>
 <div class="block">The name of the JSON String that holds the time when the performance
 section was entered: "StartTime".</div>
 <dl class="notes">
@@ -837,7 +837,7 @@ section was entered: "StartTime".</div>
 <section class="detail" id="JSONField_Success">
 <h3>JSONField_Success</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-208">JSONField_Success</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-207">JSONField_Success</a></span></div>
 <div class="block">The name of the JSON Object that holds a success message: "Success".</div>
 <dl class="notes">
 <dt>See Also:</dt>
@@ -854,7 +854,7 @@ section was entered: "StartTime".</div>
 <section class="detail" id="JSONField_ThresholdExceededRuns">
 <h3>JSONField_ThresholdExceededRuns</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-215">JSONField_ThresholdExceededRuns</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-214">JSONField_ThresholdExceededRuns</a></span></div>
 <div class="block">The name of the JSON Number that holds the number of performance
 section runs where the threshold was exceeded: "ThresholdExceeded".</div>
 <dl class="notes">
@@ -872,8 +872,8 @@ section runs where the threshold was exceeded: "ThresholdExceeded".</div>
 <section class="detail" id="JSONField_TimedOut">
 <h3>JSONField_TimedOut</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-221">JSONField_TimedOut</a></span></div>
-<div class="block">The name of the JSON boolean that holds timed out flag: "TimedOut".</div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-220">JSONField_TimedOut</a></span></div>
+<div class="block">The name of the JSON boolean that holds timed out flag: "IsTimedOut".</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -889,7 +889,7 @@ section runs where the threshold was exceeded: "ThresholdExceeded".</div>
 <section class="detail" id="JSONField_TimedOutRuns">
 <h3>JSONField_TimedOutRuns</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-228">JSONField_TimedOutRuns</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-227">JSONField_TimedOutRuns</a></span></div>
 <div class="block">The name of the JSON Number that holds the number of performance
 section runs that timed out: "TimedOut".</div>
 <dl class="notes">
@@ -907,7 +907,7 @@ section runs that timed out: "TimedOut".</div>
 <section class="detail" id="JSONField_Unit">
 <h3>JSONField_Unit</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-238">JSONField_Unit</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-237">JSONField_Unit</a></span></div>
 <div class="block">The name of the JSON String that holds the unit for the dimension from
 a dimensioned value: "Unit".</div>
 <dl class="notes">
@@ -927,7 +927,7 @@ a dimensioned value: "Unit".</div>
 <section class="detail" id="JSONField_Value">
 <h3>JSONField_Value</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-248">JSONField_Value</a></span></div>
+<div class="member-signature"><span class="modifiers">static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.perflog.remote/org/tquadrat/foundation/perflog/remote/PerfLogRemote.html#line-247">JSONField_Value</a></span></div>
 <div class="block">The name of the JSON Number that holds the value from a dimensioned
 value: "Value".</div>
 <dl class="notes">
