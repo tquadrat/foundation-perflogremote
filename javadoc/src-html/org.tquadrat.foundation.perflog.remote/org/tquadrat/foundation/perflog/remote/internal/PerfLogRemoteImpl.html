@@ -62,12 +62,12 @@
 <span class="source-line-no">049</span><span id="line-49"> *  {@link PerfLogRemote }.}&lt;/p&gt;</span>
 <span class="source-line-no">050</span><span id="line-50"> *</span>
 <span class="source-line-no">051</span><span id="line-51"> *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org</span>
-<span class="source-line-no">052</span><span id="line-52"> *  @version $Id: PerfLogRemoteImpl.java 1229 2026-05-04 19:11:41Z tquadrat $</span>
+<span class="source-line-no">052</span><span id="line-52"> *  @version $Id: PerfLogRemoteImpl.java 1258 2026-06-04 18:33:06Z tquadrat $</span>
 <span class="source-line-no">053</span><span id="line-53"> *  @since 0.25.0</span>
 <span class="source-line-no">054</span><span id="line-54"> *</span>
 <span class="source-line-no">055</span><span id="line-55"> *  @UMLGraph.link</span>
 <span class="source-line-no">056</span><span id="line-56"> */</span>
-<span class="source-line-no">057</span><span id="line-57">@ClassVersion( sourceVersion = "$Id: PerfLogRemoteImpl.java 1229 2026-05-04 19:11:41Z tquadrat $" )</span>
+<span class="source-line-no">057</span><span id="line-57">@ClassVersion( sourceVersion = "$Id: PerfLogRemoteImpl.java 1258 2026-06-04 18:33:06Z tquadrat $" )</span>
 <span class="source-line-no">058</span><span id="line-58">@API( status = INTERNAL, since = "0.25.0" )</span>
 <span class="source-line-no">059</span><span id="line-59">public final class PerfLogRemoteImpl implements PerfLogRemote</span>
 <span class="source-line-no">060</span><span id="line-60">{</span>
@@ -81,7 +81,7 @@
 <span class="source-line-no">068</span><span id="line-68">     *  in case that was not properly closed.}&lt;/p&gt;</span>
 <span class="source-line-no">069</span><span id="line-69">     *</span>
 <span class="source-line-no">070</span><span id="line-70">     *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org</span>
-<span class="source-line-no">071</span><span id="line-71">     *  @version $Id: PerfLogRemoteImpl.java 1229 2026-05-04 19:11:41Z tquadrat $</span>
+<span class="source-line-no">071</span><span id="line-71">     *  @version $Id: PerfLogRemoteImpl.java 1258 2026-06-04 18:33:06Z tquadrat $</span>
 <span class="source-line-no">072</span><span id="line-72">     *  @since 0.25.0</span>
 <span class="source-line-no">073</span><span id="line-73">     *</span>
 <span class="source-line-no">074</span><span id="line-74">     *  @param  objectName  The object name that is used to connect to the</span>
@@ -94,7 +94,7 @@
 <span class="source-line-no">081</span><span id="line-81">     *</span>
 <span class="source-line-no">082</span><span id="line-82">     *  @UMLGraph.link</span>
 <span class="source-line-no">083</span><span id="line-83">     */</span>
-<span class="source-line-no">084</span><span id="line-84">    @ClassVersion( sourceVersion = "$Id: PerfLogRemoteImpl.java 1229 2026-05-04 19:11:41Z tquadrat $" )</span>
+<span class="source-line-no">084</span><span id="line-84">    @ClassVersion( sourceVersion = "$Id: PerfLogRemoteImpl.java 1258 2026-06-04 18:33:06Z tquadrat $" )</span>
 <span class="source-line-no">085</span><span id="line-85">    @API( status = INTERNAL, since = "0.25.0" )</span>
 <span class="source-line-no">086</span><span id="line-86">    private record Janitor( ObjectName objectName, JMXServiceURL url, JMXConnector connector, MBeanServerConnection connection, NotificationListener listener ) implements Runnable</span>
 <span class="source-line-no">087</span><span id="line-87">    {</span>
@@ -221,7 +221,7 @@
 <span class="source-line-no">208</span><span id="line-208">     *  {@link IllegalStateException}</span>
 <span class="source-line-no">209</span><span id="line-209">     *  if not.</span>
 <span class="source-line-no">210</span><span id="line-210">     *</span>
-<span class="source-line-no">211</span><span id="line-211">     *  @return {@code true} if the instance is still active.</span>
+<span class="source-line-no">211</span><span id="line-211">     *  @return {@true} if the instance is still active.</span>
 <span class="source-line-no">212</span><span id="line-212">     *  @throws IllegalStateException</span>
 <span class="source-line-no">213</span><span id="line-213">     *      {@link #close()}</span>
 <span class="source-line-no">214</span><span id="line-214">     *      was already called on this instance.</span>

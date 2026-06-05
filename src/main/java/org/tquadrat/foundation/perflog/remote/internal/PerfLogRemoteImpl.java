@@ -49,12 +49,12 @@ import org.tquadrat.foundation.perflog.remote.PerfLogRemote;
  *  {@link PerfLogRemote }.}</p>
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: PerfLogRemoteImpl.java 1229 2026-05-04 19:11:41Z tquadrat $
+ *  @version $Id: PerfLogRemoteImpl.java 1258 2026-06-04 18:33:06Z tquadrat $
  *  @since 0.25.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: PerfLogRemoteImpl.java 1229 2026-05-04 19:11:41Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: PerfLogRemoteImpl.java 1258 2026-06-04 18:33:06Z tquadrat $" )
 @API( status = INTERNAL, since = "0.25.0" )
 public final class PerfLogRemoteImpl implements PerfLogRemote
 {
@@ -68,7 +68,7 @@ public final class PerfLogRemoteImpl implements PerfLogRemote
      *  in case that was not properly closed.}</p>
      *
      *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
-     *  @version $Id: PerfLogRemoteImpl.java 1229 2026-05-04 19:11:41Z tquadrat $
+     *  @version $Id: PerfLogRemoteImpl.java 1258 2026-06-04 18:33:06Z tquadrat $
      *  @since 0.25.0
      *
      *  @param  objectName  The object name that is used to connect to the
@@ -81,7 +81,7 @@ public final class PerfLogRemoteImpl implements PerfLogRemote
      *
      *  @UMLGraph.link
      */
-    @ClassVersion( sourceVersion = "$Id: PerfLogRemoteImpl.java 1229 2026-05-04 19:11:41Z tquadrat $" )
+    @ClassVersion( sourceVersion = "$Id: PerfLogRemoteImpl.java 1258 2026-06-04 18:33:06Z tquadrat $" )
     @API( status = INTERNAL, since = "0.25.0" )
     private record Janitor( ObjectName objectName, JMXServiceURL url, JMXConnector connector, MBeanServerConnection connection, NotificationListener listener ) implements Runnable
     {
@@ -208,7 +208,7 @@ public final class PerfLogRemoteImpl implements PerfLogRemote
      *  {@link IllegalStateException}
      *  if not.
      *
-     *  @return {@code true} if the instance is still active.
+     *  @return {@true} if the instance is still active.
      *  @throws IllegalStateException
      *      {@link #close()}
      *      was already called on this instance.
