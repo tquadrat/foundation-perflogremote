@@ -12,4 +12,4 @@ The Remote Client for Foundation Performance Logging and Monitoring Extension
     </dependency>
     ```
 ---  
-Last updated: 2026-10-16T14:15:24.632721065+02:00[Europe/Berlin]
+Last updated: 2026-10-16T14:31:29.614357893+02:00[Europe/Berlin]
