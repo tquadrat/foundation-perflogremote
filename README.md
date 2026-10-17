@@ -8,8 +8,8 @@ The Remote Client for Foundation Performance Logging and Monitoring Extension
     <dependency>
       <groupId>org.tquadrat.library</groupId>
       <artifactId>org.tquadrat.foundation.perflog.remote</artifactId>
-      <version>0.25.13</version>
+      <version>0.25.14</version>
     </dependency>
     ```
 ---  
-Last updated: 2026-10-16T14:31:29.614357893+02:00[Europe/Berlin]
+Last updated: 2026-10-17T17:22:04.599113274+02:00[Europe/Berlin]
